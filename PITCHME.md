@@ -25,7 +25,3 @@ int foo(double a) {
   return 1;
 }
 ```
-
-***
-
-### 4枚目
