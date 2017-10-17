@@ -6,22 +6,48 @@
 
 ---
 
-
-### 2枚目
+### Ruby
 
 ```ruby
-def foo()
-  return 1
+class Hoge
+  # mixin some module
+  include SomeModule
+  def foo()
+    return 1
+  end
 end
 ```
 
 +++
 
 
-### 3枚目
+### C++
 
 ```cpp
-int foo(double a) {
-  return 1;
-}
+class Hoge {
+private:
+  int foo(double a) {
+    return 1;
+  }
+public:
+  // constructor
+  Hoge() {}
+};
+```
+
+---
+
+### Elixir
+
+```elixir
+defmodule Hoge
+  # public function
+  def public_func(arg) do
+    private_func(arg)
+  end
+  # internal function
+  defp private_func(arg) do
+    arg
+  end
+end
 ```
