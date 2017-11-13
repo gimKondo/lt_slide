@@ -59,7 +59,7 @@
 - 最初のmovがニーモニック≒命令
 - 続くのがオペランド≒引数
 
-```assembly
+```nasm
 mov eax, ebx ; ebxの値をeaxに格納
 ```
 
@@ -68,7 +68,7 @@ mov eax, ebx ; ebxの値をeaxに格納
 ### 転送命令: MOV
 値を指定の場所に格納
 
-```assembly
+```nasm
 MOV eax, ebx     ; ebxの値をeaxに格納
 MOV [esp+4], eax ; eaxの値をespが指すアドレスの4byte先に格納
 ```
@@ -78,7 +78,7 @@ MOV [esp+4], eax ; eaxの値をespが指すアドレスの4byte先に格納
 ### 演算命令: ADD
 2値の和を第
 
-```assembly
+```nasm
 ADD eax, ebx     ; eaxとebxの和をeaxに格納
 ```
 
@@ -90,7 +90,7 @@ ADD eax, ebx     ; eaxとebxの和をeaxに格納
 - ZF(ゼロフラグ)  : 結果が0ならフラグを立てる
 - SF(サインフラグ): 結果が負値ならフラグを立てる
 
-```assembly
+```nasm
 CMP 1, 1; ZFが1, SFが0
 CMP 2, 1; ZFが0, SFが0
 CMP 1, 2; ZFが0, SFが1
@@ -102,7 +102,7 @@ CMP 1, 2; ZFが0, SFが1
 ZF=1のときジャンプ
 つまり、2値の比較結果が同じならジャンプ
 
-```assembly
+```nasm
 CMP eax, ebx; eaxとebxが
 JE L1       ; 等しければL1(アドレス)にジャンプ
 ```
