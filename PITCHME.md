@@ -76,7 +76,7 @@ MOV [esp+4], eax ; eaxの値をespが指すアドレスの4byte先に格納
 ---
 
 ### 演算命令: ADD
-2値の和を第
+2値の和を第1オペランドに格納
 
 ```nasm
 ADD eax, ebx     ; eaxとebxの和をeaxに格納
