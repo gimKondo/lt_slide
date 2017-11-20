@@ -151,7 +151,7 @@ JE L1       ; 等しければL1(アドレス)にジャンプ
 バッファオーバーフローを利用
 
 
----?code=dynamic_rewrite.c
+---?code=rewrite.c
 
 動的なコードの書き換え
 
