@@ -1,4 +1,4 @@
-theme : night
-highlight : monokai
+# theme : night
+highlight : zenburn
 slide-number : true
 transition : convex
