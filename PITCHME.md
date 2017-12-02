@@ -119,63 +119,63 @@ JE L1       ; 等しければL1(アドレス)にジャンプ
 ### コードとスタックの実例
 
 ---?code=f_stack.c
-@[12-15](main関数)
+@[9-12](main関数)
 
 ---
 
 ![VS2017](image/stack01.png)
 
 ---?code=f_stack.c
-@[1-8](func1(1回目))
+@[1-5](func1(1回目))
 
 ---
 
 ![VS2017](image/stack02.png)
 
 ---?code=f_stack.c
-@[1-8](func1(2回目))
+@[1-5](func1(2回目))
 
 ---
 
 ![VS2017](image/stack03.png)
 
 ---?code=f_stack.c
-@[1-8](func1(3回目))
+@[1-5](func1(3回目))
 
 ---
 
 ![VS2017](image/stack04.png)
 
 ---?code=f_stack.c
-@[1-8](func2)
+@[6-8](func2)
 
 ---
 
 ![VS2017](image/stack05.png)
 
 ---?code=f_stack.c
-@[1-8](func1(3回目戻り))
+@[1-5](func1(3回目戻り))
 
 ---
 
 ![VS2017](image/stack04.png)
 
 ---?code=f_stack.c
-@[1-8](func1(2回目戻り))
+@[1-5](func1(2回目戻り))
 
 ---
 
 ![VS2017](image/stack03.png)
 
 ---?code=f_stack.c
-@[1-8](func1(1回目戻り))
+@[1-5](func1(1回目戻り))
 
 ---
 
 ![VS2017](image/stack02.png)
 
 ---?code=f_stack.c
-@[12-15](main関数(戻ってきた))
+@[9-12](main関数(戻ってきた))
 
 ---
 
