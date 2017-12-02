@@ -13,4 +13,3 @@ void main(int argc, char* argv[]) {
     int x = 2;
     func1(x);
 }
-
