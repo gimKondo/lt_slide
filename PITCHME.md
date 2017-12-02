@@ -196,12 +196,14 @@ JE L1       ; 等しければL1(アドレス)にジャンプ
 
 バッファオーバーフローを利用
 
+---
 
-### おまけ
+![VS2017](image/buffer_overflow01.png)
 
----?code=rewrite.c
+---
 
-動的なコードの書き換え
+![VS2017](image/buffer_overflow02.png)
 
+---
 
 ### では、皆さん良いハッカーライフを！
