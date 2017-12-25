@@ -1,56 +1,42 @@
-### タイトル
+### Vagrantで作る・配る・更新する開発環境
 
-
-テンプレート
 
 
 ---
 
-### Ruby
+### 背景
 
-```ruby
-class Hoge
-  # mixin some module
-  include SomeModule
-  def foo()
-    return 1
-  end
-end
-```
-
-+++
-
-
-### C++
-
-```cpp
-class Hoge {
-private:
-  int foo(double a) {
-    return 1;
-  }
-public:
-  // constructor
-  Hoge() {}
-};
-```
+元々はAWSのEC2、GCPのGCEを開発環境にしていたのだが…
 
 ---
 
-### Elixir
+### EC2・GCEの問題点
 
-```elixir
-defmodule Hoge
-  # public function
-  def public_func(arg) do
-    private_func(arg)
-  end
-  # internal function
-  defp private_func(arg) do
-    arg
-  end
-end
-```
-@[1,10](モジュール定義)
-@[2-5](公開関数の定義)
-@[6-9](内部関数の定義)
+- 配布が難しい
+    - SSHキー
+    - 個人設定
+- 環境の可視化が難しい
+- 環境の更新の配布が難しい
+- コーディングがコンソール上に限定される
+
+---
+
+### Vagrantの登場
+
+---
+
+### Vagrantの概要
+
+- ホストOS(Windows、Mac等)からVMを便利に扱うツール
+- VMの情報をテキストファイル(Vagrantfile)で記述可能
+- ホストOSとファイルの共有可能(が、苦労するポイントあり)
+
+---
+
+### 今回目指す開発環境
+
+- 配布可能な開発(コーディング+実行)環境
+    - ローカルでもコンソールでもコーディング可能
+
+
+
