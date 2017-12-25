@@ -111,6 +111,8 @@ mount --bind #{VAGRANT_HOME}/vagrant_node_modules #{GUEST_SHARED_DIR}/#{APP_DIR}
 echo "*************** complete mount node_modules *******************"
 ```
 
+---
+
 ### ゲストOSでの開発環境
 
 - ホストOSとコードを共有しているので、ホストOSで開発したい人はお気に召すまま
