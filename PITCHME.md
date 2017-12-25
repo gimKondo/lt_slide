@@ -127,6 +127,19 @@ echo "*************** complete mount node_modules *******************"
 
 - 専用のリポジトリで管理
     - https://github.com/gimKondo/dotfiles
+- リポジトリのクローンとデプロイはprovisionで実行
+    - 後で更新に追随したい場合はpull
+- 対象
+    - zsh等のシェル設定
+    - vim等のエディタ設定
+    - .gitconfig
+    - などなど
+
+---
+
+### ゲストOSのdotfile管理(2)
+
+- dotfileのインストール(デプロイ)シェル
 
 ```sh
 # install.shから抜粋
