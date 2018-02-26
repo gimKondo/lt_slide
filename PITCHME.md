@@ -1,56 +1,27 @@
-### タイトル
-
-
-テンプレート
+### 文字コード
 
 
 ---
 
-### Ruby
+### 文字コードとは何か？
 
-```ruby
-class Hoge
-  # mixin some module
-  include SomeModule
-  def foo()
-    return 1
-  end
-end
-```
-
-+++
-
-
-### C++
-
-```cpp
-class Hoge {
-private:
-  int foo(double a) {
-    return 1;
-  }
-public:
-  // constructor
-  Hoge() {}
-};
-```
+- 文字集合
+- 文字符号化方式
 
 ---
 
-### Elixir
+### 文字集合
 
-```elixir
-defmodule Hoge
-  # public function
-  def public_func(arg) do
-    private_func(arg)
-  end
-  # internal function
-  defp private_func(arg) do
-    arg
-  end
-end
-```
-@[1,10](モジュール定義)
-@[2-5](公開関数の定義)
-@[6-9](内部関数の定義)
+
+---
+
+### Unicode
+
+
+---
+
+### 改行コード
+
+- LF
+- CR
+- CRLF
