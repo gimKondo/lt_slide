@@ -3,6 +3,7 @@
 }
 
 #gp-logo img {
+  max-height: 5rem;
   width: 89px;
   height: 114px;
 }
