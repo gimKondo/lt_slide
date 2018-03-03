@@ -1,4 +1,5 @@
 # css
 theme-override: assets/css/PITCHME.css
-
 logo: assets/img/logo.png
+
+slide-number: true
