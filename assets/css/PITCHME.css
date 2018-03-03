@@ -4,4 +4,5 @@
 
 #gp-logo img {
   max-height: 5rem;
+  !important;
 }
