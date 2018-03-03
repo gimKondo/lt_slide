@@ -6,6 +6,18 @@
 
 ---
 
+### Itemization
+
+- level1 a
+    - level2
+        - level3
+- level1 b
+    - level2
+- level1 c
+
+---
+
+
 ### Ruby
 
 ```ruby
