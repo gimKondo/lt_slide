@@ -1,68 +1,73 @@
-### タイトル
+### ソフトウェアテスト(頭出しするだけ)
 
-
-テンプレート
-
-
----
-
-### Itemization
-
-- level1 a
-    - level2
-        - level3
-- level1 b
-    - level2
-- level1 c
+「テストがないコードはレガシーコードだ」
+(マイケル・C・フェザーズ著 レガシーコード改善ガイド より)
 
 ---
 
+### テストの無い世界
 
-### Ruby
-
-```ruby
-class Hoge
-  # mixin some module
-  include SomeModule
-  def foo()
-    return 1
-  end
-end
-```
-
-+++
-
-
-### C++
-
-```cpp
-class Hoge {
-private:
-  int foo(double a) {
-    return 1;
-  }
-public:
-  // constructor
-  Hoge() {}
-};
-```
+- 怖くてリファクタリングできない
+- 既存コードの変更が怖いのでコピペ祭り
+- 品質を保証する方法は「お祈り」
 
 ---
 
-### Elixir
+### テストレベル
 
-```elixir
-defmodule Hoge
-  # public function
-  def public_func(arg) do
-    private_func(arg)
-  end
-  # internal function
-  defp private_func(arg) do
-    arg
-  end
-end
-```
-@[1,10](モジュール定義)
-@[2-5](公開関数の定義)
-@[6-9](内部関数の定義)
+- ユニット(単体)テスト
+- 結合テスト
+
+---
+
+
+### ユニットテスト
+
+- 関数、クラスレベルのテスト
+- 通常は外部システムから独立して動かす
+- フレームワーク
+    - xUnit, xSpec
+
+---
+
+
+### 結合テスト
+
+- 外部システムを含めたテスト
+- UIを含めたテスト
+- ハードウェアを含めたテスト
+- Web向けフレームワーク
+    - Selenium、Appiumなど
+
+---
+
+### 良いテスト 悪いテスト
+
+- 良いテスト
+    - 必要十分
+    - 独立
+        - モジュールが疎結合
+        - モック、スタブ
+- 悪いテスト
+    - 不足
+    - 過剰→スローテスト
+    - 依存性
+        - 外部システム
+        - 他のテストケース
+
+---
+
+### TDD(Test Driven Development)
+
+- 実装前にテストを書く
+- ×テスト手法 ○実装手法
+- ≒BDD(Behaviour Driven Development)
+
+---
+
+### 静的コード解析
+
+- コーディング規約チェック
+- バグの予兆を検出
+- フレームワーク
+    - Lint系、rubocop、credo
