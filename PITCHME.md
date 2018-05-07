@@ -1,68 +1,69 @@
-### タイトル
-
-
-テンプレート
+### GoFのデザインパターン 01
 
 
 ---
 
-### Itemization
+### 概要
 
-- level1 a
-    - level2
-        - level3
-- level1 b
-    - level2
-- level1 c
+- 4人のおっさんがまとめた設計・実装パターンカタログ
+- OOP言語(C++やJava等)をベースに考えられている
 
 ---
 
+### モチベーション
 
-### Ruby
-
-```ruby
-class Hoge
-  # mixin some module
-  include SomeModule
-  def foo()
-    return 1
-  end
-end
-```
-
-+++
-
-
-### C++
-
-```cpp
-class Hoge {
-private:
-  int foo(double a) {
-    return 1;
-  }
-public:
-  // constructor
-  Hoge() {}
-};
-```
+- 設計パターンを学習する
+- 例を通して抽象的な設計の発想方法を鍛える
+    - **ほどほどに** 抽象的なので教材に良い
 
 ---
 
-### Elixir
+### アンチ・モチベーション
 
-```elixir
-defmodule Hoge
-  # public function
-  def public_func(arg) do
-    private_func(arg)
-  end
-  # internal function
-  defp private_func(arg) do
-    arg
-  end
-end
-```
-@[1,10](モジュール定義)
-@[2-5](公開関数の定義)
-@[6-9](内部関数の定義)
+- 古い
+- 今となってはあまり使わないものも多い
+- というか直接使うケースは少ないと思う
+
+
+---
+
+### 方針
+
+- 使用頻度の高いもの、学習価値の高そうなものをピックアップして紹介
+- 覚えるより、考え方の訓練
+
+
+---
+
+### 今週のパターン
+
+- Strategy
+- Observer
+- Composite
+
+---
+
+### Strategy
+
+![クラス図](uml/gof_strategy.png)
+
+---
+
+### Observer
+
+![クラス図](uml/gof_observer.png)
+
+---
+
+### Composite
+
+![クラス図](uml/gof_composite.png)
+
+---
+
+### 発展
+
+より抽象度の高いパターン
+
+- エンタープライズアプリケーションアーキテクチャパターン(マーチン・ファウラー)
+- ドメイン駆動設計(エリック・エヴァンス)

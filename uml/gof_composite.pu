@@ -1,0 +1,18 @@
+@startuml
+title Composite
+
+interface Component {
+  +operation()
+}
+class Leaf {
+  +operation()
+}
+class Composite {
+  +operation()
+}
+
+Component <|.d. Leaf
+Component <|.. Composite
+Component "0..1" --o Composite
+
+@enduml
