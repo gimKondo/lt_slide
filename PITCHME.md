@@ -45,17 +45,25 @@
 
 ### Strategy
 
+- アルゴリズムの動的(≒実行時)な選択
+
 ![クラス図](uml/gof_strategy.png)
 
 ---
 
 ### Observer
 
+- イベント処理
+- Pub-Subモデル
+
 ![クラス図](uml/gof_observer.png)
 
 ---
 
 ### Composite
+
+- ツリー構造の再帰的なデータ構造を表現するのに使用
+- 例: ディレクトリとファイル
 
 ![クラス図](uml/gof_composite.png)
 
