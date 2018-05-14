@@ -1,4 +1,4 @@
-### GoFのデザインパターン 01
+### GoFのデザインパターン 02
 
 
 ---
@@ -10,68 +10,63 @@
 
 ---
 
-### モチベーション
-
-- 設計パターンを学習する
-- 例を通して抽象的な設計の発想方法を鍛える
-    - **ほどほどに** 抽象的なので教材に良い
-
----
-
-### アンチ・モチベーション
-
-- 古い
-- 今となってはあまり使わないものも多い
-- というか直接使うケースは少ないと思う
-
-
----
-
-### 方針
-
-- 使用頻度の高いもの、学習価値の高そうなものをピックアップして紹介
-- 覚えるより、考え方の訓練
-
-
----
 
 ### 今週のパターン
 
-- Strategy
-- Observer
-- Composite
+- Chain of Responsibility
+- Decorator
+- Flyweight
+
+- 時間があったら
+    - Builder
+    - Abstrac Factory
+    - Factory Method
 
 ---
 
-### Strategy
+### Chain of Responsibility(1)
 
-- アルゴリズムの動的(≒実行時)な選択
+- 業務のタライ回し
 
-![クラス図](uml/gof_strategy.png)
+![クラス図](uml/gof_chain_of_resp.png)
 
----
 
-### Observer
-
-- イベント処理
-- Pub-Subモデル
-
-![クラス図](uml/gof_observer.png)
+- 利用例
+    - UIコンポーネントのコンテキストヘルプ
+    - ログレベルの制御
 
 ---
 
-### Composite
+### Chain of Responsibility(2)
 
-- ツリー構造の再帰的なデータ構造を表現するのに使用
-- 例: ディレクトリとファイル
-
-![クラス図](uml/gof_composite.png)
+```java
+void request(arg) {
+  if (自分が処理する条件) {
+    // 処理
+  } else if (next != null) {
+    // 後続に処理を任せる
+    next.request(arg);
+  } else {
+    // 処理不能
+  }
+}
+```
 
 ---
 
-### 発展
+### Decorator
 
-より抽象度の高いパターン
+- 機能を **動的に追加** する
 
-- エンタープライズアプリケーションアーキテクチャパターン(マーチン・ファウラー)
-- ドメイン駆動設計(エリック・エヴァンス)
+![クラス図](uml/gof_decorator.png)
+
+---
+
+### Flyweight
+
+- インスタンスの再利用による省メモリ(リソース)
+- 不変オブジェクトに適用
+- 発展: コピーオンライト
+
+![クラス図](uml/gof_flyweight.png)
+

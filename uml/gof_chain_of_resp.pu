@@ -1,0 +1,23 @@
+@startuml
+title Chain Of Responsibility
+
+class Client {
+}
+
+interface Handler {
+  +request()
+}
+
+class ConcreteHandler1 {
+  +request()
+}
+class ConcreteHandler2 {
+  +request()
+}
+
+Client -ri-> Handler
+Handler o-u-> Handler
+Handler <|.. ConcreteHandler1
+Handler <|.. ConcreteHandler2
+
+@enduml

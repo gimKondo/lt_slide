@@ -1,0 +1,14 @@
+@startuml
+title Flyweight
+
+class FlyweightFactory {
+  - pool : Array<FlyweightObject>
+  + getObject() : FlyweightObject
+}
+
+class FlyweightObject {
+}
+
+FlyweightFactory o-r-> FlyweightObject
+
+@enduml
